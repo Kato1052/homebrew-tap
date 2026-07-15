@@ -4,10 +4,11 @@
 class Nls < Formula
   desc "ls without month abbreviation."
   homepage "https://github.com/Kato1052/nls"
-  url "https://github.com/Kato1052/nls/archive/refs/tags/v0.0.8.tar.gz"
-  version "0.0.8"
-  sha256 "87a89d4029f3f87d11dee838262e59853391c72825290eb0536936c4dcb72eee"
+  # url "https://github.com/Kato1052/nls/archive/refs/tags/v0.0.8.tar.gz"
+  # version "0.0.8"
+  # sha256 "87a89d4029f3f87d11dee838262e59853391c72825290eb0536936c4dcb72eee"
   license "MIT"
+  version VERSION
 
   # depends_on "cmake" => :build
 
