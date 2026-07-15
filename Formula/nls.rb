@@ -29,7 +29,7 @@ class Nls < Formula
 
     zsh_completion.install "completions/zsh/_nls"
     bash_completion.install "completions/bash/nls"
-    fish_completion.install "completions/fish/nls.fish"
+    fish_completion.install "completions/fish/nls" => "nls.fish"
   end
 
   test do
