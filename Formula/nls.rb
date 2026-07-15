@@ -40,6 +40,11 @@ class Nls < Formula
     # https://docs.brew.sh/rubydoc/Formula.html#std_configure_args-instance_method
     # system "./configure", "--disable-silent-rules", *std_configure_args
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    bin.install "nls"
+
+    zsh_completion.install "completions/zsh/_nls"
+    bash_completion.install "completions/bash/nls"
+    fish_completion.install "completions/fish/nls"
   end
 
   test do
