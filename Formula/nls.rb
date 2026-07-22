@@ -4,24 +4,24 @@
 class Nls < Formula
   desc "ls without month abbreviation."
   homepage "https://github.com/Kato1052/nls"
-  version "0.0.9"
+  version "0.0.10"
   license "MIT"
 
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Kato1052/nls/releases/download/v0.0.9/nls-0.0.9_arm64_darwin.tar.gz"
-    sha256 "17ce4821301967f8974505cd701c86ab9136bb955b5915b2e8285861ac44751d"
-  end
-  if OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/Kato1052/nls/releases/download/v0.0.9/nls-0.0.9_arm64_linux.tar.gz"
-    sha256 "0ba4cd0535b726ca7b8028f52b4587f60373925d3f383a13d18afbb2bc9e0002"
-  end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/Kato1052/nls/releases/download/v0.0.9/nls-0.0.9_amd64_darwin.tar.gz"
-    sha256 "e2276e91ea2b09a981687afdc6fe0b72acd15b9d22474c31c7156b7de672ff1f"
+    url "https://github.com/Kato1052/nls/releases/download/v0.0.10/nls-0.0.10_amd64_darwin.tar.gz"
+    sha256 "92218c05994275818fd68c21200d5ec7bf71131a06c00877b8db28738e88c7c4"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Kato1052/nls/releases/download/v0.0.9/nls-0.0.9_amd64_linux.tar.gz"
-    sha256 "53016fc664b2aae0d45b09fe21ca5ee141fc6efe32b7d059e7a38fef9f5b9eaf"
+    url "https://github.com/Kato1052/nls/releases/download/v0.0.10/nls-0.0.10_amd64_linux.tar.gz"
+    sha256 "8b2397bce9535a06a2b1416bf625a40067ce5c90ebeb64faea100f32cca7e656"
+  end
+  if OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/Kato1052/nls/releases/download/v0.0.10/nls-0.0.10_arm64_darwin.tar.gz"
+    sha256 "31176ef6700f3bba23cde46a888262417c38a65764239efbb2efcc433af92b73"
+  end
+  if OS.linux? && Hardware::CPU.arm?
+    url "https://github.com/Kato1052/nls/releases/download/v0.0.10/nls-0.0.10_arm64_linux.tar.gz"
+    sha256 "fd667295b456237cc0aa55a47d77b3f873f618be3957f42c7f446b01bc7d4831"
   end
 
   def install
